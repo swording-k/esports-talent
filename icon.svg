@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <!-- 背景渐变 -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#1a1c24"/>
+      <stop offset="100%" style="stop-color:#0a0c10"/>
+    </radialGradient>
+
+    <!-- 主橙色渐变 -->
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8c00"/>
+      <stop offset="50%" style="stop-color:#ff6b00"/>
+      <stop offset="100%" style="stop-color:#ff4400"/>
+    </linearGradient>
+
+    <!-- 发光效果 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- 强发光 -->
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 深色背景 -->
+  <rect width="300" height="300" fill="url(#bgGrad)"/>
+
+  <!-- 网格线（电竞风格） -->
+  <g stroke="rgba(255,140,0,0.08)" stroke-width="1">
+    <line x1="0" y1="75" x2="300" y2="75"/>
+    <line x1="0" y1="150" x2="300" y2="150"/>
+    <line x1="0" y1="225" x2="300" y2="225"/>
+    <line x1="75" y1="0" x2="75" y2="300"/>
+    <line x1="150" y1="0" x2="150" y2="300"/>
+    <line x1="225" y1="0" x2="225" y2="300"/>
+  </g>
+
+  <!-- 外圈装饰 -->
+  <circle cx="150" cy="150" r="130" fill="none" stroke="url(#mainGrad)" stroke-width="2" opacity="0.3"/>
+  <circle cx="150" cy="150" r="115" fill="none" stroke="url(#mainGrad)" stroke-width="1" opacity="0.2"/>
+
+  <!-- 追踪圆圈（青色） -->
+  <circle cx="150" cy="150" r="55" fill="none" stroke="#4ecdc4" stroke-width="3" opacity="0.8" filter="url(#glow)"/>
+
+  <!-- 橙色小球 -->
+  <g filter="url(#strongGlow)">
+    <circle cx="120" cy="130" r="22" fill="url(#mainGrad)"/>
+    <circle cx="115" cy="125" r="7" fill="rgba(255,255,255,0.4)"/>
+  </g>
+
+  <!-- 准星中心 -->
+  <g filter="url(#glow)">
+    <circle cx="150" cy="150" r="12" fill="none" stroke="url(#mainGrad)" stroke-width="2"/>
+    <circle cx="150" cy="150" r="3" fill="url(#mainGrad)"/>
+  </g>
+
+  <!-- 四个方向指示 -->
+  <g stroke="url(#mainGrad)" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <line x1="150" y1="45" x2="150" y2="65"/>
+    <line x1="150" y1="235" x2="150" y2="255"/>
+    <line x1="45" y1="150" x2="65" y2="150"/>
+    <line x1="235" y1="150" x2="255" y2="150"/>
+  </g>
+
+  <!-- 顶部装饰条 -->
+  <rect x="100" y="18" width="100" height="4" rx="2" fill="url(#mainGrad)" filter="url(#glow)"/>
+
+  <!-- 六维能力点 -->
+  <g filter="url(#glow)">
+    <circle cx="150" cy="35" r="5" fill="#ff8c00"/>
+    <circle cx="220" cy="60" r="5" fill="#4ecdc4"/>
+    <circle cx="265" cy="150" r="5" fill="#a29bfe"/>
+    <circle cx="220" cy="240" r="5" fill="#fd79a8"/>
+    <circle cx="80" cy="240" r="5" fill="#00b894"/>
+    <circle cx="35" cy="150" r="5" fill="#ffeaa7"/>
+  </g>
+
+  <!-- 闪电符号 -->
+  <g transform="translate(150,150)" filter="url(#strongGlow)">
+    <path d="M-6,-22 L4,-5 L-1,-5 L5,18 L-3,0 L2,0 L-6,-22 Z"
+          fill="#ffdd00" stroke="#ff8c00" stroke-width="0.5"/>
+  </g>
+
+  <!-- 底部扫描线效果 -->
+  <g opacity="0.1">
+    <rect x="0" y="290" width="300" height="10" fill="url(#mainGrad)"/>
+  </g>
+</svg>
