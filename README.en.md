@@ -4,7 +4,17 @@
 
 A Douyin virtual interactive-space project with six lightweight challenges for reaction speed, tapping speed, vision, tracking, memory, and hand-eye coordination. This version is an offline multi-file HTML5 Canvas build suitable for packaging as an interactive-space zip.
 
-Live demo: [https://swording-k.github.io/esports-talent/](https://swording-k.github.io/esports-talent/)
+Web preview: [https://swording-k.github.io/esports-talent/](https://swording-k.github.io/esports-talent/)
+
+## How To Try
+
+### Douyin QR Scan
+
+Scan the work QR code with the Douyin app to open the interactive-space experience. Please update Douyin to version `38.2.0` or later first. If scanning still opens old content, restart the Douyin app and scan again.
+
+### Web Preview
+
+You can also open the GitHub Pages preview: [https://swording-k.github.io/esports-talent/](https://swording-k.github.io/esports-talent/)
 
 ## Highlights
 

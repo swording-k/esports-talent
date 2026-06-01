@@ -4,7 +4,17 @@
 
 抖音虚拟平台互动空间作品：6 项趣味挑战测试反应、手速、视野、追踪、记忆、协调能力。项目已升级为离线 HTML5 Canvas 多文件版本，适合打包为互动空间 zip 上传。
 
-在线体验：[https://swording-k.github.io/esports-talent/](https://swording-k.github.io/esports-talent/)
+网页预览：[https://swording-k.github.io/esports-talent/](https://swording-k.github.io/esports-talent/)
+
+## 体验方式
+
+### 抖音扫码体验
+
+使用抖音 App 扫描作品二维码即可进入互动空间体验。请先将抖音更新到 `38.2.0` 或以上版本；如果扫码后仍显示旧内容，可以重启抖音 App 后重新扫码。
+
+### 网页预览
+
+也可以直接打开 GitHub Pages 预览版：[https://swording-k.github.io/esports-talent/](https://swording-k.github.io/esports-talent/)
 
 ## 功能亮点
 
@@ -25,7 +35,7 @@
 | 顺序记忆 | 复现方向序列 | 短时记忆 |
 | 手眼协调 | 偏移滑块接住下落目标 | 操作协调 |
 
-## 运行方式
+## 本地运行
 
 推荐通过本地静态服务体验：
 
