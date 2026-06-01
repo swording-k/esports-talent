@@ -12,6 +12,8 @@ Web preview: [https://swording-k.github.io/esports-talent/](https://swording-k.g
 
 Scan the work QR code with the Douyin app to open the interactive-space experience. Please update Douyin to version `38.2.0` or later first. If scanning still opens old content, restart the Douyin app and scan again.
 
+![Douyin QR code](assets/douyin-qr.png)
+
 ### Web Preview
 
 You can also open the GitHub Pages preview: [https://swording-k.github.io/esports-talent/](https://swording-k.github.io/esports-talent/)

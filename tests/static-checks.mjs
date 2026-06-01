@@ -9,6 +9,7 @@ assert.ok(existsSync(join(root, 'index.html')), 'index.html must exist at projec
 assert.ok(existsSync(join(root, 'styles.css')), 'styles.css must be split out locally');
 assert.ok(existsSync(join(root, 'src/app.js')), 'src/app.js must be split out locally');
 assert.ok(existsSync(join(root, 'assets/icon.png')), '300x300 PNG product icon must exist locally');
+assert.ok(existsSync(join(root, 'assets/douyin-qr.png')), 'Douyin QR code image must exist locally');
 
 const index = read('index.html');
 const css = read('styles.css');
@@ -17,6 +18,7 @@ const app = read('src/app.js');
 assert.match(index, /<link rel="stylesheet" href="\.\/styles\.css">/);
 assert.match(index, /href="\.\/assets\/icon\.png"/);
 assert.match(index, /<script src="\.\/src\/app\.js" defer><\/script>/);
+assert.match(read('README.md'), /!\[抖音扫码体验二维码\]\(assets\/douyin-qr\.png\)/);
 assert.doesNotMatch(index, /maximum-scale|user-scalable\s*=\s*no/i);
 
 const publishSurface = `${index}\n${css}\n${app}`;

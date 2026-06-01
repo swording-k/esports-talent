@@ -12,6 +12,8 @@
 
 使用抖音 App 扫描作品二维码即可进入互动空间体验。请先将抖音更新到 `38.2.0` 或以上版本；如果扫码后仍显示旧内容，可以重启抖音 App 后重新扫码。
 
+![抖音扫码体验二维码](assets/douyin-qr.png)
+
 ### 网页预览
 
 也可以直接打开 GitHub Pages 预览版：[https://swording-k.github.io/esports-talent/](https://swording-k.github.io/esports-talent/)
